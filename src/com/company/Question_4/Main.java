@@ -1,6 +1,9 @@
 package com.company.Question_4;
+import java.util.Scanner;
 
 public class Main {
+
+    private Scanner userNumber = new Scanner(System.in);
 
     public static void main(String[] args) {
         /*
@@ -11,5 +14,31 @@ public class Main {
         you have been teleported to a volcano."
          */
     }
+
+    public Scanner getInput() {
+        return userNumber;
+    }
+
+    public void setInput(Scanner input) {
+        this.userNumber = input;
+    }
+
+    public static void userInput () {
+
+    int userNumber;
+
+    System.out.println("Pick a number between 1 and 100.");
+
+    if (userNumber >= 1 && userNumber <= 45) {
+        System.out.println("You have been teleported to a swamp");
+    } else if (userNumber >= 46 && userNumber <= 90) {
+        System.out.println("Lucky you, you've been\n" +
+                " teleported to the beach");
+    } else if (userNumber >= 91 && userNumber <= 100) {
+        System.out.println("Well, I hope you like it hot,\n" +
+                " you have been teleported to a volcano.");
+    }
+
+}
 
 }

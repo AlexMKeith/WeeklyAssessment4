@@ -27,5 +27,16 @@ public class Main {
         carsList.add(new Car("Tesla", "Model 3", "Grey"));
     }
 
+    protected void viewCarList() {
 
+        int position = 1;
+
+        for (int i = 0; i < populateArrayList().size(); i++) {
+            System.out.println(position + ". " + populateArrayList().get(i).carsList());
+            position++;
+
+        }
+
+
+    }
 }

@@ -1,6 +1,10 @@
 package com.company.Question_5;
 
+import java.util.Scanner;
+
 public class Main {
+
+    private Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
          /*
@@ -11,6 +15,26 @@ public class Main {
          */
 
 
+    }
+    public void newMain() {
+        System.out.println("Which direction would you like to go?");
+        switch (input.nextLine()) {
+            case "Forward":
+                System.out.println("You choose to go forward.");
+                newMain();
+            case "Left":
+                System.out.println("You choose to go left.");
+                newMain();
+            case "Right":
+                System.out.println("You choose to go right.");
+                newMain();
+            case "backwards":
+                System.out.println("You choose to go backwards.");
+                newMain();
+                default:
+                    System.out.println("Please pick one of the options.");
+                    newMain();
+        }
     }
 
 }

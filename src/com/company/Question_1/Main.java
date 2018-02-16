@@ -1,10 +1,18 @@
 package com.company.Question_1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
 
    /*
-    YOUR NAME HERE! - No really put your name here so we know who this belongs to when we grade it <3
+    Alex Keith
      */
+
+    private String input = new String(System.in);
+    List<String> answer = Arrays.asList();
 
     public static void main(String[] args) {
          /*
@@ -14,6 +22,20 @@ public class Main {
         4. Have this new method use a ForEach loop to iterate through the ArrayList and display each item to the user.
          */
 
+
+    }
+
+    protected void addToArrayList() {
+        answer.add(input);
+    }
+
+    protected void displayArray() {
+        int position = 1;
+
+        for (int i = 0; i < answer.size(); i++) {
+            System.out.println(position + ". " + answer.get(i).input());
+            position++;
+        }
 
     }
 }
